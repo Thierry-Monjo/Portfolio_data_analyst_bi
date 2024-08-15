@@ -2,7 +2,7 @@
 ## Un projet de portfolio de professionnel de la data
 
 
-### Eléments de biographie
+### Quelques mots de biographie
 Après une longue carrière en qualité de comptable associatif, j'ai décidé me m'intéresser au domaine de la data en toute fin de carrière. 
 J'ai préparé et obtenu en mars 2024 le diplôme RNCP "Data Analyst" d'[OpenClassrooms](https://openclassrooms.com/fr/).
 
@@ -19,9 +19,9 @@ Sont accessibles :
 - un document PowerBI qui reprend les différents projets tutorés validés
 - chacun des livrables produits à l'appui des projets
 
-### Un tableau de bord faisant une synthèse de veille informationnelle data
+### Un tableau de bord faisant une synthèse de veille informationnelle des métiers de la data
 Est accessible :
-- un document PowerBi présentant des ressources adaptées
+- un document PowerBI présentant des ressources adaptées
 
 ### Des livrables réalisés spécifiquement pour ce projet Portfolio 
 Sont accessibles :
