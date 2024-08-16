@@ -21,7 +21,7 @@ Sont accessibles :
 
 ### Un tableau de bord faisant une synthèse de veille informationnelle des métiers de la data
 Est accessible :
-- un document PowerBI présentant des ressources adaptées
+- un [document PowerBI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au format PDF pour consultation directe)
 
 ### Des livrables réalisés spécifiquement pour ce projet Portfolio 
 Sont accessibles :
