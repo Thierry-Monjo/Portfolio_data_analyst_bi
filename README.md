@@ -26,7 +26,7 @@ Est accessible :
 ### Des livrables réalisés spécifiquement pour ce projet Portfolio 
 Sont accessibles :
 - le [cahier des charges du portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
-- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) de réalisation du portfolio réalisé sur PowerBI (également au format PDF pour consultation directe)
+- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) de réalisation du portfolio réalisé sur PowerBI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe)
 - une analyse des besoins métier data de l'entreprise Aeroworld
 - un document de procédure de création graphique en analyse data (PowerBI)
 - une vidéo en appui du document de formation
