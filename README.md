@@ -16,19 +16,19 @@ Pour constituer ce portfolio un certain nombre d'éléments sont mis en partage 
 
 ### Les livrables, compétences professionnelles et soft-skils rattachés à l'ensemble de la formation "Business Intelligence Analyst" 
 Sont accessibles :
-- un [document PowerBI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe)
+- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe)
 - [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_project) produits à l'appui des projets
 
 ### Un tableau de bord faisant une synthèse de veille informationnelle des métiers de la data
 Est accessible :
-- un [document PowerBI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe)
+- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe)
 
 ### Des livrables réalisés spécifiquement pour ce projet Portfolio 
 Sont accessibles :
 - le [cahier des charges du portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) de réalisation du portfolio réalisé sur PowerBI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe)
 - une [analyse des besoins métier data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Astroworld.pdf) de l'entreprise Aeroworld
-- un document de procédure de création graphique en analyse data (PowerBI)
+- un document de procédure de création graphique en analyse data (Power BI)
 - une vidéo en appui du document de formation
 
 
