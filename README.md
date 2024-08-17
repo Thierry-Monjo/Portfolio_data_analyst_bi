@@ -29,6 +29,4 @@ Sont accessibles :
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe)
 - une [analyse des besoins métier data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Astroworld.pdf) de l'entreprise Aeroworld
 - un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
-- une vidéo en appui du document de formation
-
-
+- une [vidéo destiné aux débutants](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Initiation_PowerBI.mp4) en appui du document de formation à la data visualisation (Power BI)
