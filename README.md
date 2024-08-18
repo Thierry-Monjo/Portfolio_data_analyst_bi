@@ -1,7 +1,6 @@
 # Portfolio_project
 ## Un projet de portfolio de professionnel de la data
 
-
 ### Quelques mots de biographie
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
 J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2022](https://www.francecompetences.fr/recherche/rncp/34964/) d'[OpenClassrooms](https://openclassrooms.com/fr/).
@@ -9,7 +8,7 @@ J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2
 Ce projet est le dernier de la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation que j'achève à présent (septembre 2024).
 
 ### Objet du projet
-Le projet consiste à élaborer un portfolio professionnel destiné à présenter mon profil de candidat au poste de Data Analyst chef de projet d'une entreprise fictive nommée Aeroworld.
+Le projet consiste à élaborer un portfolio professionnel destiné à présenter mon profil de candidat au poste de Data Analyst chef de projet d'une entreprise fictive nommée Aéroworld.
 
 ## Des éléments en partage
 Pour constituer ce portfolio un certain nombre d'éléments sont mis en partage :
@@ -27,6 +26,6 @@ Est accessible :
 Sont accessibles :
 - le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe)
-- une [analyse des besoins métier data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aeroworld
+- une [analyse des besoins métier data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
 - un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
 - une [vidéo destiné aux débutants](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Initiation_PowerBI.mp4) en appui du document de formation à la data visualisation (Power BI)
