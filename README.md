@@ -29,6 +29,6 @@ Est accessible :
 Sont accessibles :
 - le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
-- une [analyse des besoins métier data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
+- une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
 - un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
 - une [vidéo destiné aux débutants](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Initiation_PowerBI.mp4) en appui du document de formation à la data visualisation (Power BI)
