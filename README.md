@@ -7,6 +7,33 @@ J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2
 
 Ce projet est le dernier de la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation que j'achève à présent (septembre 2024).
 
+Et en clin d'oeil pour aider à me définir...
+
+**Sonnet pour une présentation**
+
+```
+Savoir choisir les mots pour mieux se définir,
+Savoir se distinguer, savoir aussi se vendre,
+Savoir donner à voir et peut-être surprendre,
+Savoir que son passé peut servir l'avenir.
+
+Se présenter, pourquoi ? Devant qui se tenir ?
+Se jauger justement pour ne pas se prétendre,
+Évoquer tour à tour tant le feu que la cendre,
+Aller à l'essentiel pour mieux y parvenir.
+
+Un sonnet, pensez-donc ! Ce corset illusoire ?
+Cette forme d'un temps où s'écrivait l'Histoire,
+Cet éclair de raison où se niche l'emoi ?
+
+Et puis l'alexandrin, on trouve plus moderne
+Pour, lors d'un entretien, éclairer la lanterne.
+Mais cet original, avouons-le, c'est moi !
+```
+
+Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concours de poésie, écrite pour la plupart des textes en classique.
+
+
 ### Objet du projet
 Le projet consiste à élaborer un portfolio professionnel destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'Aéroworld.
 
