@@ -50,7 +50,7 @@ Ce portfolio professionnel est destiné à présenter mon profil de candidat au 
 ## Des éléments en partage
 Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 
-### $\color{teal}{\textsf{Les livrables, compétences professionnelles et soft-skills rattachés à l'ensemble de la formation "Business }}$ $\color{teal}{\textsf{Intelligence Analyst" récemment suivie}}$
+### Les livrables, compétences professionnelles et soft-skills rattachés à l'ensemble de la formation "Business Intelligence Analyst" récemment suivie}}$
 
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
@@ -58,11 +58,12 @@ Sont accessibles :
 - le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
 
-### $\color{green}{\textsf{Un tableau de bord proposant une synthèse de ressources utiles à l'établissement d'une veille informationnelle}}$ $\color{green}{\textsf{des métiers de la data}}$
+### Un tableau de bord proposant une synthèse de ressources utiles à l'établissement d'une veille informationnelle des métiers de la data
+
 Est accessible :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
 
-### $\color{red}{\textsf{Des livrables réalisés spécifiquement pour Aéroworld}}$
+### Des livrables réalisés spécifiquement pour **Aéroworld**
 
 ![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Aeroworld.png)
 
