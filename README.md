@@ -1,11 +1,10 @@
-# Portfolio_project
-## Un projet de portfolio de professionnel de la data
+# Portfolio Data Analyste BI
 
-### Quelques mots de biographie
+## Quelques mots de biographie
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
 J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2022](https://www.francecompetences.fr/recherche/rncp/34964/) d'[OpenClassrooms](https://openclassrooms.com/fr/).
 
-Ce projet est le dernier de la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation que j'achève à présent (septembre 2024).
+J'ai achevé la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (septembre 2024).
 
 Et en clin d'oeil pour aider à me définir...
 
@@ -34,14 +33,14 @@ Mais cet original, avouons-le, c'est moi !
 Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concours de poésie, écrite pour la plupart des textes en classique.
 
 
-### Objet du projet
-Le projet consiste à élaborer un portfolio professionnel destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'Aéroworld.
+## Objet de ce portfolio 
+Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'Aéroworld.
 
 ![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Aeroworld.png)
 
 
 ## Des éléments en partage
-Pour constituer ce portfolio un certain nombre d'éléments sont mis en partage :
+Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 
 ### Les livrables, compétences professionnelles et soft-skils rattachés à l'ensemble de la formation "Business Intelligence Analyst" 
 Sont accessibles :
