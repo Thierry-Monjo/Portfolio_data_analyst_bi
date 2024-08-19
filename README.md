@@ -6,7 +6,7 @@
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
 J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2022](https://www.francecompetences.fr/recherche/rncp/34964/) d'[OpenClassrooms](https://openclassrooms.com/fr/).
 
-![OpenClassrooms_logo](https://openclassrooms.zendesk.com/hc/theming_assets/01HZPA5Z6SJFR5GRET9JJBPYSY)
+![OpenClassrooms_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/OpenClassrooms_logo.png)
 
 
 J'ai achevé la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (août 2024).
