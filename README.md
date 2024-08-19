@@ -42,7 +42,7 @@ Ce portfolio professionnel est destiné à présenter mon profil de candidat au 
 ## Des éléments en partage
 Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 
-### Les livrables, compétences professionnelles et soft-skils rattachés à l'ensemble de la formation "Business Intelligence Analyst" 
+### Les livrables, compétences professionnelles et soft-skils rattachés à l'ensemble de la formation "Business Intelligence Analyst" récemment suivie
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
 - [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_project) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx_y*
