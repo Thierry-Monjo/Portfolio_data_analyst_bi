@@ -1,10 +1,10 @@
 # Portfolio Data Analyste BI
 
-## Quelques mots de biographie
+## Quelques mots de présentation
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
 J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2022](https://www.francecompetences.fr/recherche/rncp/34964/) d'[OpenClassrooms](https://openclassrooms.com/fr/).
 
-J'ai achevé la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (septembre 2024).
+J'ai achevé la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (août 2024).
 
 Et en clin d'oeil pour aider à me définir...
 
@@ -34,7 +34,7 @@ Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concour
 
 
 ## Objet de ce portfolio 
-Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'Aéroworld.
+Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'**Aéroworld**.
 
 ![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Aeroworld.png)
 
@@ -46,15 +46,18 @@ Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
 - [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_project) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx_y*
+- le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
+- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
 
 ### Un tableau de bord faisant une synthèse de veille informationnelle des métiers de la data
 Est accessible :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
 
-### Des livrables réalisés spécifiquement pour ce projet Portfolio 
+### Des livrables réalisés spécifiquement pour **Aéroworld**
+
+![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Aeroworld.png)
+
 Sont accessibles :
-- le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
-- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
 - une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
 - un [cahier des charges fonctionnel pour cadrer les besoins et solutions](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_fonctionnel_Aeroworld.pdf) qui concernent Aéroworld
 - un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
