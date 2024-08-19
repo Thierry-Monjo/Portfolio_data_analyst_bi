@@ -9,7 +9,7 @@ Ce projet est le dernier de la formation de "Business Intelligence Analyst" | [R
 
 Et en clin d'oeil pour aider à me définir...
 
-**Sonnet pour une présentation**
+**Sonnet avant d'entrer**
 
 ```
 Savoir choisir les mots pour mieux se définir,
