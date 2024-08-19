@@ -63,7 +63,7 @@ Sont accessibles :
 Est accessible :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
 
-### Des livrables réalisés spécifiquement pour **Aéroworld**
+### Des livrables réalisés spécifiquement pour Aéroworld
 
 ![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Aeroworld.png)
 
