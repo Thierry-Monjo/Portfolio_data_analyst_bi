@@ -1,4 +1,6 @@
-# Portfolio Data Analyste BI
+# Portfolio Business Intelligence Analyst
+
+![Business-Intelligence-Analyst_image](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Business-Intelligence-Analyst.jpg)
 
 ## Quelques mots de présentation
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
