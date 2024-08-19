@@ -9,7 +9,7 @@ J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2
 ![OpenClassrooms_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/OpenClassrooms_logo.png)
 
 
-J'ai achevé la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (août 2024).
+Je viens tout juste d'achever la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (août 2024).
 
 Et en clin d'oeil pour aider à me définir...
 
