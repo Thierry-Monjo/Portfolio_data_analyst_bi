@@ -11,6 +11,8 @@ J'ai préparé et obtenu en mars 2024 le diplôme [RNCP "Data Analyst" version 2
 
 Je viens tout juste d'achever la formation de "Business Intelligence Analyst" | [RNCP "Data Analyst Business Intelligence"](https://www.francecompetences.fr/recherche/rncp/37837/) du même organisme de formation (août 2024).
 
+<hr>
+
 Et en clin d'oeil pour aider à me définir...
 
 **Sonnet avant d'entrer**
@@ -37,6 +39,7 @@ Mais cet original, avouons-le, c'est moi !
 
 Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concours de poésie, écrite pour la plupart des textes en classique.
 
+<hr>
 
 ## Objet de ce portfolio 
 Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'**Aéroworld**.
