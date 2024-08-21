@@ -30,7 +30,7 @@ Aller à l'essentiel pour mieux y parvenir.
 
 Un sonnet, pensez-donc ! Ce corset illusoire ?
 Cette forme d'un temps où s'écrivait l'Histoire,
-Cet éclair de raison où se niche l'emoi ?
+Cet éclair de l'esprit où se niche l'emoi ?
 
 Et puis l'alexandrin, on trouve plus moderne
 Pour, lors d'un entretien, éclairer la lanterne.
