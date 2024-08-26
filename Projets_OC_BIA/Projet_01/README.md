@@ -1,8 +1,10 @@
+# Démarrez votre formation de Business Intelligence Analyst
+
 ## Aperçu du projet 
 
 Ce projet visait à découvrir le métier de Business Intelligence Analyst. 
 
-Il permettait de faire un premier point sur les exigences du métier et des soft skills qui lui sont rattachés.
+Il permettait de faire un premier point sur les *exigences du métier* et des soft skills qui lui sont rattachés.
 
 Quelques soft skills essentiels relevés  :
 - Qualité d’écoute et de compréhension des enjeux métiers
@@ -24,4 +26,4 @@ Quelques soft skills essentiels relevés  :
 
 ## Livrables réalisés
 
-Présentation de la démarche
+- Présentation de la démarche
