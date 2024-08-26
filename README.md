@@ -52,11 +52,14 @@ Ce portfolio professionnel est destiné à présenter mon profil de candidat au 
 ## Des éléments en partage
 Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 
-### Les livrables, compétences professionnelles et soft-skills rattachés à l'ensemble de la formation "Business Intelligence Analyst" récemment suivie
+### [Les livrables, compétences professionnelles et soft-skills rattachés à l'ensemble de la formation "Business Intelligence Analyst" récemment suivie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/tree/main/Projets_OC_BIA)
 
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
 - [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx*
+
+## Le cahier des charges fonctionnel et le diagramme de Gantt relatifs au présent portfolio
+
 - le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Gantt_portfolio.pdf) pour consultation directe sur Github)
 
