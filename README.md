@@ -44,7 +44,7 @@ Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concour
 ## Objet de ce portfolio 
 Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'**Aéroworld**.
 
-![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/img/Aeroworld.png)
+![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
 
 
 ## Des éléments en partage
@@ -53,8 +53,8 @@ Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 ### Les livrables, compétences professionnelles et soft-skills rattachés à l'ensemble de la formation "Business Intelligence Analyst" récemment suivie
 
 Sont accessibles :
-- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
-- [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx_y*
+- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
+- [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx_y*
 - le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
 - un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
 
