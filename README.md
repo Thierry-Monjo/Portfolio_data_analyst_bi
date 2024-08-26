@@ -15,6 +15,8 @@ Je viens tout juste d'achever la formation de "Business Intelligence Analyst" | 
 
 Et en clin d'oeil pour aider à me définir...
 
+![Poetry](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/poetry.png)
+
 **Sonnet avant d'entrer**
 
 ```
