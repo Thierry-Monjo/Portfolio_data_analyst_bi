@@ -20,7 +20,7 @@ Comment juguler un taux d'attrition inquiétant ?
 
 - Concevoir des graphiques adaptés en prenant en compte les bonnes pratiques d'accessibilité
 
-## Soft skills
+## Soft skills mis en oeuvre
 
 - Adaptabilité
 - Sens pédagogique
