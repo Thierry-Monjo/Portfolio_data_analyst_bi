@@ -65,7 +65,7 @@ Est accessible :
 
 ### Des livrables réalisés spécifiquement pour Aéroworld
 
-![Aéroworld_logo](https://github.com/Thierry-MonjoPortfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
+![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
 
 Sont accessibles :
 - une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
