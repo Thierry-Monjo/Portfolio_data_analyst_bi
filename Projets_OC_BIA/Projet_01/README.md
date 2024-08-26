@@ -22,3 +22,6 @@ Quelques soft skills essentiels relevés  :
 - Aptitude à l'organisation
 - Sens de la méthode
 
+## Livrables réalisés
+
+Présentation de la démarche
