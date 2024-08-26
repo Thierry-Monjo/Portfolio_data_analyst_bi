@@ -55,20 +55,20 @@ Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pbix) qui reprend les différents projets tutorés validés (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Synthese_projets_tutores.pdf) pour consultation directe sur Github)
 - [chacun des livrables](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/) produits à l'appui des 10 projets de la formation, accessibles sous le schéma générique *Projet_xx_y*
-- le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_portfolio_candidat.pdf)
-- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Gantt_portfolio.pdf) pour consultation directe sur Github)
+- le [cahier des charges du présent portfolio](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Cahier_des_charges_portfolio_candidat.pdf)
+- un [diagramme de Gantt](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Gantt_portfolio.pbix) concernant ce portfolio réalisé sur Power BI (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Portfolio/Gantt_portfolio.pdf) pour consultation directe sur Github)
 
 ### Un tableau de bord proposant une synthèse de ressources utiles à l'établissement d'une veille informationnelle des métiers de la data
 
 Est accessible :
-- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
+- un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Veille_informationnelle_metiers_data/Veille_informationnelle_metiers_data.pbix) présentant des ressources adaptées (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Veille_informationnelle_metiers_data/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
 
 ### Des livrables réalisés spécifiquement pour Aéroworld
 
-![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/img/Aeroworld.png)
+![Aéroworld_logo](https://github.com/Thierry-MonjoPortfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
 
 Sont accessibles :
-- une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
-- un [cahier des charges fonctionnel pour cadrer les besoins et solutions](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Cahier_des_charges_fonctionnel_Aeroworld.pdf) qui concernent Aéroworld
-- un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
-- une [vidéo destiné aux débutants](https://github.com/Thierry-Monjo/Portfolio_project/blob/main/Initiation_PowerBI.mp4) en appui du document de formation à la data visualisation (Power BI)
+- une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
+- un [cahier des charges fonctionnel pour cadrer les besoins et solutions](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Cahier_des_charges_fonctionnel_Aeroworld.pdf) qui concernent Aéroworld
+- un [document de procédure de création graphique](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Formation_equipe/Guide_prise_en_main_%20PowerBI.pdf) en analyse data (Power BI)
+- une [vidéo destiné aux débutants](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Formation_equipe/Initiation_PowerBI.mp4) en appui du document de formation à la data visualisation (Power BI)
