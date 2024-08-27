@@ -4,7 +4,7 @@
 
 Sont accessibles :
 - une [analyse des besoins métiers data](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Analyse_des_besoins_metiers_Aeroworld.pdf) de l'entreprise Aéroworld
-- un [cahier des charges fonctionnel pour cadrer les besoins et solutions](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Cahier_des_charges_fonctionnel_Aeroworld.pdf) qui concernent Aéroworld
+- un [cahier des charges fonctionnel pour cadrer les besoins et solutions](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Pour_Aeroworld/Cahier_des_charges_fonctionnel_Aeroworld.pdf) concernant Aéroworld
 
 #### [Des outils de formation pour débutants à destination d'Aéroworld](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/tree/main/Formation_equipe)
 
