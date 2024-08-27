@@ -17,7 +17,7 @@ Et en clin d'oeil pour aider à me définir...
 
 ![Poetry](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/poetry.png)
 
-**Sonnet avant d'entrer**
+**[Sonnet](https://fr.wikipedia.org/wiki/Sonnet) avant d'entrer**
 
 ```
 Savoir choisir les mots pour mieux se définir,
