@@ -1,0 +1,768 @@
+---
+title: "R Notebook Projet 6"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+---
+
+# ETUDE DE L'EVOLUTION DU CHIFFRE D'AFFAIRES ET DES RELATIONS PRODUITS ET CLIENTS / LIBRAIRIE LAPAGE
+
+![Logo Lapage](Lapage.png)
+
+```{r message=FALSE}
+library(tidyverse)
+```
+
+## PREPARATION ET EXPLORATION DES DONNEES 
+
+```{r message=FALSE}
+customers  <-  read_csv("customers.csv", col_names = TRUE)
+head(customers)
+```
+
+```{r}
+summary(customers)
+```
+Pas de valeurs manquantes.
+
+```{r}
+sum(duplicated(customers$client_id)) # pas de doublon
+```
+
+```{r message=FALSE}
+products <- read_csv("products.csv", col_names = TRUE)
+head(products)
+```
+
+```{r}
+summary(products)
+```
+
+Pas de valeurs manquantes. Un ou plusieurs produits ont un prix négatif. Examen.
+
+```{r}
+products %>% 
+  filter(price == -1)
+```
+
+Un seul produit concerné, T_0. Avoir ou autre ? A noter. 
+
+```{r}
+sum(duplicated(products$id_prod)) # pas de doublon
+```
+
+```{r message=FALSE}
+transactions <- read_csv("transactions.csv", col_names = TRUE)
+head(transactions)
+```
+
+```{r}
+summary(transactions)
+```
+
+*Il manque 200 dates dans les données. Pourquoi ?*
+
+```{r}
+problems(transactions) # retourne les valeurs posant problèmes de traitement / package {readr}
+```
+
+
+```{r}
+filter(transactions, is.na(transactions$date))
+```
+
+```{r}
+transactions %>% 
+  filter(transactions$id_prod == "T_0") %>% 
+  count()
+```
+
+*De manière évidente, il s'agit d'un test ayant eu lieu à la même date et portant la mention "test_2021-03-01". Les lignes sont à supprimer.*
+
+```{r}
+transactions <- transactions %>%
+  filter(transactions$id_prod != "T_0")
+
+summary(transactions)  # 679532 - 679332 = 200 , le compte est bon
+```
+
+```{r}
+sum(duplicated(transactions)) # pas de doublon / aucune ligne répétée par erreur
+```
+
+En toute rigueur, il convient également de corriger le dataframe *products* qui contient le produit T_0 associé aux tests.
+
+```{r}
+products <- products %>%
+  filter(id_prod != "T_0")
+```
+
+```{r}
+library(questionr)
+freq(table(products$categ), valid = FALSE, digits = 2)  # nombre de produits par catégorie et pourcentages associés
+```
+
+
+**Fusion des données transactions et products**
+
+```{r}
+trans_prod <- transactions %>%
+  tidylog::left_join(products, by = "id_prod")   # {tidylog} rend le package {dplyr} plus bavard
+```
+
+
+```{r}
+summary(trans_prod)
+```
+
+*Il manque 221 prix et 221 entrées catégories.*
+
+```{r}
+trans_prod[is.na(trans_prod$categ) | is.na(trans_prod$price),] %>%
+  group_by(id_prod) %>%
+  count()
+```
+
+Un seul produit est concerné : le 0_2245, à 221 reprises. Son préfixe le désignerait comme faisant partie de la catégorie 0. Attribution, à défaut, de la valeur médiane des prix des produits de catégorie 0.
+
+
+```{r}
+med_price_cat_0 <-
+  median(trans_prod[trans_prod$categ == 0,]$price, na.rm = TRUE)
+trans_prod[is.na(trans_prod$categ), ]$categ <- 0
+trans_prod[is.na(trans_prod$price), ]$price <- med_price_cat_0
+```
+
+
+```{r}
+table(trans_prod[trans_prod$id_prod == "0_2245", ]$price, trans_prod[trans_prod$id_prod ==
+                                                                       "0_2245", ]$categ)
+```
+
+
+## ANALYSE DES DONNEES
+
+### Analyse de la répartition du chiffre d'affaires
+
+
+**Relevé de quelques données significatives concernant le CA des produits.**
+
+
+
+```{r}
+CA_prod <- trans_prod %>%
+  group_by(id_prod) %>%
+  summarise(CA = sum(price, na.rm = TRUE))
+```
+
+```{r}
+# Les 6 premiers produits classés par CA (les tops)
+head(CA_prod %>% 
+       arrange(desc(CA)))
+```
+
+```{r}
+# Les 6 derniers produits classés par CA (les flops)
+head(CA_prod %>% 
+       arrange(CA))
+```
+
+```{r}
+ggplot(CA_prod) +
+  aes(x = CA) +
+  geom_histogram(bins = 30L, fill = "royalblue") +
+  labs(title = "Répartition du chiffre d'affaires par produit") +
+  theme_grey() +
+  theme(plot.title = element_text(size = 16L,
+                                  face = "bold",
+                                  hjust = 0.5))
+```
+
+
+
+#### Mesure de l'inégalité des produits en matière de CA.
+
+```{r}
+library(ineq) # package {ineq} / Measuring Inequality, Concentration, and Poverty
+```
+
+**Courbe de Lorenz de la répartition du CA par produit**
+
+
+```{r}
+plot(Lc(CA_prod$CA), col = "darkred", lwd = 2, main="Courbe de Lorenz - Répartition du CA par produit", xlab = "Cumul nb produits", ylab= "Cumul CA")
+```
+
+On compare les valeurs cumulées des déciles avec la droite d'équi-répartition, c'est une estimation de l'inégalité. Ici très marquée.
+
+**Indice ou coefficient de Gini**
+
+```{r}
+ineq(CA_prod$CA, type = "Gini") # G = 2*AUC / plus G est fort, plus l'inégalité est forte. O = égalité parfaite, 1 inégalité parfaite jamais atteinte.
+```
+
+**CA par catégories**
+
+```{r}
+## Transtypage custom_prod$categ en factor
+trans_prod$categ <- trans_prod$categ %>%
+  as.character() %>%
+  as.factor()
+
+
+trans_prod %>%
+  group_by(categ) %>%
+  summarise(CA = sum(price)) %>%
+  ggplot() +
+  aes(
+    x = categ,
+    y = CA,
+    fill = categ,
+    label = paste(round(CA, 0), sep = " / ", paste(round(
+      CA * 100 / sum(trans_prod$price, na.rm = TRUE), 2
+    ), "%"))
+  ) +
+  geom_col() +
+  geom_text(size = 3, position = position_stack(vjust = 0.5)) +
+  scale_fill_hue(direction = 1) +
+  labs(x = "Catégories",
+       y = "CA",
+       title = "Répartition du CA par catégories") +
+  theme_classic()
+  
+```
+
+### Analyse de tendance et saisonnalité
+
+#### Préparation des données temporelles
+
+**Regroupement des dates par mois**
+
+```{r}
+trans_prod$periode <- format(trans_prod$date, "%y-%m")
+trans_prod$date_courte <- as.Date(trans_prod$date)
+
+```
+
+
+```{r}
+CA_periode  <-  trans_prod %>%
+  group_by(periode) %>%
+  summarise(CA = sum(price))
+
+CA_periode
+```
+
+
+```{r}
+CA_periode %>%
+  ggplot(aes(x = periode, y = CA)) +
+  geom_col(width = 0.5, fill = "royalblue") +
+  labs(title = "Répartition du chiffre d'affaires par période") +
+  theme_grey() +
+  theme(plot.title = element_text(size = 16L,
+                                  face = "bold",
+                                  hjust = 0.5)) +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+**Que s'est-il passé en octobre 2021 ?**
+
+```{r}
+## Transtypage custom_prod$categ en factor
+trans_prod$categ <- trans_prod$categ %>%
+  as.character() %>%
+  as.factor()
+```
+
+```{r message=FALSE}
+trans_prod[trans_prod$periode == "21-09",] %>%
+  group_by(categ, date_courte) %>%
+  summarise(CA = sum(price)) %>%
+  ggplot(aes(x = date_courte, y = CA, colour = categ)) +
+  geom_point() +
+  scale_color_hue(direction = 1) +
+  labs(title = "Répartition du chiffre d'affaires par dates et catégories / septembre 2021") +
+  labs(x = "date") +
+  theme(plot.title = element_text(size = 16L,
+                                  face = "bold",
+                                  hjust = 0.5)) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme_minimal()
+```
+
+
+```{r message=FALSE}
+trans_prod[trans_prod$periode == "21-10",] %>%
+  group_by(categ, date_courte) %>%
+  summarise(CA = sum(price)) %>%
+  ggplot(aes(x = date_courte, y = CA, colour = categ)) +
+  geom_point() +
+  scale_color_hue(direction = 1) +
+  labs(title = "Répartition du chiffre d'affaires par dates et catégories / octobre 2021") +
+  labs(x = "Date") +
+  theme(plot.title = element_text(size = 16L,
+                                  face = "bold",
+                                  hjust = 0.5)) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme_minimal()
+```
+
+Que s'est-il passé sur la catégorie 1 au mois d'octobre ?
+
+```{r}
+trans_prod[trans_prod$periode == "21-10",] %>%
+  filter(categ=="1") %>% 
+  group_by(date_courte) %>% 
+  count()
+```
+
+Les ventes de livres en catégorie 1 connaissent une interruption complète et prolongée du 2 au 27 octobre. **C'est un évènement exceptionnel. Il convient d'en corriger l'incidence.**
+
+```{r}
+# CA des produits de catégorie 1 pour octobre (moyenne 09 et 11)
+
+CA_periode_corr <-  CA_periode
+
+CA_periode_corr[CA_periode_corr$periode == "21-10", ]$CA <-
+  sum(trans_prod[(trans_prod$categ == 0 |
+                    trans_prod$categ == 2) &
+                   trans_prod$periode == "21-10",]$price) + sum(trans_prod[trans_prod$categ == 1 &
+                                                                             (trans_prod$periode == "21-09" |
+                                                                                trans_prod$periode == "21-11"),]$price) / 2
+```
+
+
+```{r}
+CA_periode_corr
+```
+
+
+#### Approche de la tendance et de la saisonnalité
+
+**Création de la série temporelle**
+
+```{r}
+CA.ts <- ts(CA_periode_corr$CA, start = c(2021, 3), frequency = 12)
+CA.ts
+```
+
+```{r}
+str(CA.ts)
+```
+
+**Approche de la tendance par les moyennes mobiles**
+
+
+```{r}
+library(zoo)
+
+#Calculate moving average with window 3 and make first and last value as NA (to ensure identical length of vectors)
+m.av <- rollmean(CA.ts, 3, fill = list(NA, NULL, NA))
+
+```
+
+
+```{r}
+ts.plot(
+  CA.ts,
+  m.av,
+  xlab = "t",
+  ylab = "CA",
+  col = c(1, 2),
+  lwd = c(1, 2),
+  main = "CA observé et CA lissé / moyenne mobile sur 3 mois"
+)
+legend(
+  "topleft",
+  legend = c("CA", "CA_lissé"),
+  col = c(1, 2),
+  lwd = c(1, 2)
+)
+```
+
+
+**Approche de la tendance par décomposition saisonnière**
+
+```{r}
+library(stlplus)    # package {stlplus} Seasonal Decomposition of Time Series by Lœss
+decomp_CA_stl <- stlplus(CA.ts, s.window = "periodic")
+plot(decomp_CA_stl)
+```
+
+Une tendance d'abord montante en pente régulière puis descendante en pente régulière à partir du 1er trimestre 2022.
+
+
+### Analyse de la clientèle
+
+Détermination de l'âge / positionnement en 2023
+
+```{r}
+customers$age  <-  2023 - customers$birth
+```
+
+```{r}
+head(customers)
+```
+
+#### Fusion des données transactions et clients
+
+```{r}
+custom_prod  <-  trans_prod %>%
+  tidylog::left_join(customers, by = "client_id")
+```
+
+```{r}
+summary(custom_prod)
+```
+
+Aucune valeur manquante.
+
+
+**Chiffre d'affaires par clients**
+
+```{r}
+CA_clients <- custom_prod %>%
+  group_by(client_id) %>%
+  summarise(CA = sum(price),
+            prop = round(sum(price) / sum(trans_prod$price) * 100, 2)) %>%
+  arrange(desc(CA))
+
+head(CA_clients, 10)  # les 10 premiers clients par CA
+```
+
+*4 gros clients (libraires) se détachent nettement et constituent, de fait, des outliers (CA > 100 k€ contre 5.3 k€ pour le 5e).*
+
+
+#### Mesure de l'inégalité de la répartition du chiffre d'affaires par client / Courbe de Lorenz 
+
+```{r}
+plot(Lc(CA_clients$CA), col = "darkred", lwd = 2, main="Courbe de Lorenz - Répartition du CA par client", xlab = "Cumul nb clients", ylab= "Cumul CA")
+```
+
+On compare les valeurs cumulées des déciles avec la droite d'équi-répartition, c'est une estimation de l'inégalité, ici moyennement marquée. Toutefois, une anomalie est repérée en fin de courbe. C'est l'influence des 4 clients libraires déjà signalés.
+
+**Indice ou coefficient de Gini**
+
+```{r}
+ineq(CA_clients$CA, type = "Gini") # G = 2 fois l'aire comprise entre la droite et la courbe / plus G est fort, plus l'inégalité est forte.
+```
+
+Le coefficient de Gini est proche de 0.5, l'inégalité est moyennement marquée.
+
+
+
+
+#### Etude des relations entre clientèle et produits
+
+
+**Existe-t-il une relation significative entre le genre de la clientèle et la catégorie de livres achetés ?** 
+
+*Tableau de contingence*
+
+```{r}
+sex_categ <- table(custom_prod$sex, custom_prod$categ)
+sex_categ
+```
+
+*Pearson's Chi-squared Test*
+
+```{r}
+chisq.test(sex_categ)
+```
+
+Avec un p proche de zéro, au risque de 5%, nous peut donc rejeter l’hypothèse d’indépendance des variables : sexes et catégories sont corrélés.
+
+
+```{r}
+mosaicplot(sex_categ, shade = TRUE, main = "Analyse des résidus standardisés / sexe ~ catégories")
+```
+
+
+#### En quoi l'âge des clients est-il corrélé aux variables : montant total des achats, fréquence d'achat, taille du panier moyen, catégories des livres achetés ?
+
+**Détermination des variables à considérer dans l'analyse**
+
+```{r}
+cumul_clients <- custom_prod %>%
+  group_by(client_id) %>%
+  summarise(
+    CA = sum(price, na.rm = TRUE),
+    freq = n_distinct(session_id),
+    avg_basket = n() / freq,
+    age = max(age)     # permet de conserver l'âge par-delà l’agrégation
+  )
+
+cumul_clients %>%     # rappel des 4 clients libraires hors normes
+  arrange(desc(CA)) %>% 
+  head(4)
+
+```
+
+Les 4 clients outliers (libraires) précédemment repérés ont une incidence très forte et relève d'un statut très particulier. Ils sont à dissocier de l'analyse des relations entre les variables étudiées.
+
+```{r}
+summary(cumul_clients)   # valeurs synthétiques avec les quatre libraires repérés 
+```
+
+```{r}
+# Suppression des outliers repérés
+cumul_clients_wo_outliers <- cumul_clients %>% 
+   filter(CA < 100000)
+
+summary(cumul_clients_wo_outliers)   # valeurs synthétiques sur les clients hors libraires / CA 
+```
+
+
+**Matrice de corrélation entre les variables examinées**
+
+```{r}
+par(mfrow = c(2, 2))
+hist(cumul_clients_wo_outliers$age, col="darkgreen", main = "Ages")
+hist(cumul_clients_wo_outliers$CA, col="darkblue", main="CA")
+hist(cumul_clients_wo_outliers$freq, col="darkred", main = "Fréquences")
+hist(cumul_clients_wo_outliers$avg_basket, col="darkgrey", main="Paniers moyens", xlim = c(1,8) )
+```
+
+
+```{r}
+library(correlation)
+plot(summary(correlation(cumul_clients_wo_outliers, method = "spearman"))) # aucune variable ne semble suivre une loi normale
+```
+
+
+Les coefficients de corrélation en lien avec l'âge sont tous significatifs ***, certains corrélés négativement à l'âge, d'autres positivement.
+
+Les régressions linéaires sont-elles un bon modèle de prédiction ?
+
+##### Régressions linéaires portant sur les variables numériques
+
+###### Sur l'âge et les données calculées
+
+**Age et chiffre d'affaires**
+
+```{r}
+reg_lin_age_CA <- lm(formula = CA ~ age, data = cumul_clients_wo_outliers)
+summary(reg_lin_age_CA)
+```
+
+Au risque de 5%, l'hypothèse nulle est rejetée. Les variables sont corrélées, mais le coefficient de détermination R2 est très faible, le modèle linéaire représente imparfaitement le rapport entre les variables.
+
+Ce que confirme la visualisation.
+
+
+```{r}
+ggplot(cumul_clients_wo_outliers, aes(x = age, y = CA)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  xlab("Age") +
+  ylab("CA")+
+  ggtitle("Répartition du CA en fonction des âges et droite de régression linéaire")
+```
+
+La pente est négative. Plus le client est âgé, moins il achète.
+
+**Vérification de la normalité des résidus**
+
+```{r}
+ggplot(cumul_clients_wo_outliers, aes(x = reg_lin_age_CA$residuals)) +
+  geom_histogram(aes(y = after_stat(density)), fill = "royalblue") +
+  ggtitle("Histogramme de répartition des résidus") +
+  xlab("Résidus") +
+  ylab("")
+```
+
+On se rapproche très vaguement de la forme classique : centrée et symétrique.
+
+
+**Test de Kolmogorov-Smirnov**
+```{r warning=FALSE}
+ks.test(reg_lin_age_CA$residuals, "pnorm")
+```
+
+Le test de normalité rejette l'hypothèse nulle : la distribution des résidus ne suit pas une loi normale.
+
+Vérification de l'homoscédasticité (variance constante des résidus)
+
+```{r}
+plot(predict(reg_lin_age_CA), reg_lin_age_CA$residuals, col="darkgreen", main="Répartition des résidus selon le CA")
+```
+
+La répartition des résidus est inégale, ce que confirme le **Test de Breusch-Pagan**
+
+```{r warning=FALSE, message=FALSE}
+library(lmtest)
+
+bptest(reg_lin_age_CA)
+```
+
+Au risque de 5% nous rejetons l'hypothèse nulle : il y a hétéroscédasticité. Pas de normalité de distribution et hétéroscedasticité des résidus, le modèle linéaire étudié est mal assuré.
+
+**Age et moyenne du panier ou âge et fréquence**
+
+L'approche d'une régression linéaire pour les deux autres variables aboutissent aux mêmes conclusions : pentes et coefficients de détermination R2 très faibles et non vérification des conditions du modèle. L'approche par la régression linéaire n'offre pas d'enseignement complémentaire aux corrélations déjà relevées.
+
+
+#### Relations entre les âges et les catégories
+
+
+```{r}
+ggplot(custom_prod) +
+  aes(x = categ, y = age, fill = categ, label = median(age)) +
+  geom_violin(adjust = 1L,
+              scale = "area") +
+  geom_boxplot(width = 0.1,
+               outlier.shape = NA,
+               show.legend = FALSE) +
+  theme_minimal() +
+  ggtitle("Répartition des âges selon les catégories de livres")
+```
+
+
+Il existe une tendance forte des plus jeunes sur la catégorie 2. On constate beaucoup de valeurs extrêmes et d'amplitude pour chacune des catégories. 
+Les conditions sont-elles réunies pour réaliser une analyse des variances ?
+
+
+##### Examen des distributions des catégories en fonction de l'âge
+
+
+```{r message=FALSE}
+library(see)
+
+plt_age_categ_0 <- custom_prod %>%
+  filter(categ == "0") %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(color = "grey", fill = "#EE4000") +
+  theme_minimal()
+
+plt_age_categ_1 <- custom_prod %>%
+  filter(categ == "1") %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(color = "grey", fill = "#3CB371") +
+  theme_minimal()
+
+plt_age_categ_2 <- custom_prod %>%
+  filter(categ == "2") %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(color = "grey", fill = "#1C86EE") +
+  theme_minimal()
+
+plots(
+  plt_age_categ_0,
+  plt_age_categ_1,
+  plt_age_categ_2,
+  n_columns = 2,
+  tags = paste("Catégorie ", 0:2),
+  title = "Histogrammes de distribution des âges / catégories"
+)
+```
+
+
+La distribution de la catégorie 2 n'est pas gaussienne. La distribution de la catégorie 1 est celle qui se rapproche le plus d'une loi normale. Test de l'homogénéité de la variance entre les groupes.
+
+```{r warning=FALSE message=FALSE}
+# Levene's test
+library(car)
+leveneTest(age ~ categ,
+           data = custom_prod)
+```
+
+
+Toutes les distributions ne suivent pas une loi normale, pas d’homogénéité des variances, les tests d'analyse paramétrique de la variance Anova ou Welch Anova ne semblent pas adaptés.
+
+
+*Recours à un test non paramétrique : test de Kruskal-Wallis.*
+
+```{r}
+kruskal.test(custom_prod$age, custom_prod$categ)
+```
+
+Au risque de 5%, nous pouvons rejeter l'hypothèse d'indépendance des variables, elle sont corrélées.
+
+________________________________________________________________________________________________________________________________ 
+
+### ANNEXE DOCUMENTAIRE : DONNEES STATISTIQUES COMPLEMENTAIRES PORTANT SUR AGES ET CATEGORIES OU SEXES
+________________________________________________________________________________________________________________________________
+
+
+*Données synthétiques portant sur âges et catégories*
+
+```{r}
+custom_prod %>%
+  group_by(categ) %>%
+  summarise(
+    age_max = max(age),
+    age_min = min(age),
+    age_mean = mean(age),
+    age_median = median(age),
+    age_sd = sd(age),
+    count = n()
+  )
+```
+
+La catégorie 2 se détache nettement par son public sensiblement plus jeune. Les moyennes d'âges sont similaires entre les catégories 0 et 1. Les mêmes âges extrêmes sont présents sur les 3 catégories.
+
+```{r}
+CA_clients %>%
+  filter(CA_clients$CA < 100000) %>%
+  ggplot(aes(x = "", y = CA))   +
+  geom_violin(fill = "skyblue") +
+  geom_boxplot(
+    width = 0.1,
+    outlier.shape = NA,
+    show.legend = FALSE,
+    fill = "lightgrey"
+  ) +
+  labs(title = "Répartition du CA par clients, CA < 100k€") +
+  xlab("") +
+  theme_minimal()
+```
+
+Une médiane aux alentours de 1200€ de CA, une évidente majorité de petits clients.
+
+
+*Données synthétiques portant sur âges et sexes*
+
+```{r}
+custom_prod %>%
+  group_by(sex) %>%
+  summarise(
+    age_max = max(age),
+    age_min = min(age),
+    age_mean = mean(age),
+    age_median = median(age),
+    age_sd = sd(age),
+    count = n()
+  )
+```
+
+Hommes et femmes sont très proches sur toutes les valeurs d'âges et même en nombre.
+
+```{r}
+ggplot(customers, aes(fill = sex)) +
+  geom_histogram(
+    data = subset(customers, sex == "f"),
+    linewidth = 0.1,
+    binwidth = function(x)
+      2 * IQR(x) / (length(x) ^ (1 / 3)),
+    aes(x = age, y = after_stat(count) * (-1)),
+    color = "darkgrey"
+  ) +
+  geom_histogram(
+    data = subset(customers, sex == "m"),
+    linewidth = 0.1,
+    binwidth = function(x)
+      2 * IQR(x) / (length(x) ^ (1 / 3)),
+    aes(x = age),
+    color = "darkgrey"
+  ) +
+  scale_y_continuous(labels = paste0(as.character(c(
+    seq(20, 0, -10), seq(10, 20, 10)
+  )))) +
+  ylab("Nombre") +  coord_flip() +
+  labs(title = "Pyramide des âges des clients", subtitle = "Pyramid Plot par sexe") + theme_light()
+
+```
+
