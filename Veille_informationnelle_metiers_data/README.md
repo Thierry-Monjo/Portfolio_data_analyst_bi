@@ -1,4 +1,4 @@
-# Réalisations de veille informationnelle des métiers de la data
+# Des réalisations de veille informationnelle des métiers de la data
 
 Sont accessibles :
 - un [document Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Veille_informationnelle_metiers_data/Veille_informationnelle_metiers_data.pbix) présentant une **proposition de tableau de synthèse de ressources adaptées** (également au [format PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Veille_informationnelle_metiers_data/Veille_informationnelle_metiers_data.pdf) pour consultation directe sur Github)
