@@ -20,4 +20,4 @@ Mission : répondre aux différentes interrogations du service client d'un site 
 ## Livrables réalisés
 
 - [Présentation de la méthodologie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_05/Projet_05_presentation.pdf)
-- Expression des besoins
+- [Expression des besoins](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_05/Projet_05_expression_%20besoins.pdf)
