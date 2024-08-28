@@ -25,5 +25,5 @@ Il s'agissait de porter une réflexion stratégique pour le développement d'un 
 
 ## Livrables réalisés
 
-- Présentation de l'analyse de marché et stratégie
+- [Présentation de l'analyse de marché et stratégie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_10/Projet_10_presentation.pdf)
 - Analyse des données de marché avec PowerBI
