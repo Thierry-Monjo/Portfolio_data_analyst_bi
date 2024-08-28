@@ -25,4 +25,4 @@ pour une société de négoce en vins et alcools.
 ## Livrables réalisés
 
 - [Rapport sur les solutions de datavisualisation](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_09/Projet_09_rapport.pdf)
-- Tableau de bord PowerBI
+- Tableau de bord PowerBI; au format [PDF](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_09/Projet_09_tableau-de-bord.pdf) pour consultation directe sur Github
