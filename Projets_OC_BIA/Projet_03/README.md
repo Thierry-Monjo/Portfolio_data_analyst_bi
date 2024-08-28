@@ -20,4 +20,4 @@ Il s'agissait, en l'occurence, d'explorer les données contrats d'une société 
 ## Livrables réalisés
 
 - [Présentation de la méthodologie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_03/Projet_03_methodologie.pdf)
-- Document technique
+- [Document technique](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_03/Projet_03_document%20technique.pdf)
