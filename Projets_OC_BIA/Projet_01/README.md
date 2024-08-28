@@ -26,4 +26,4 @@ Quelques soft skills essentiels relevés  :
 
 ## Livrables réalisés
 
-- Présentation de la démarche
+- [Présentation de la démarche](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_01/Projet_01_presentation.pdf)
