@@ -23,5 +23,5 @@ Ce projet visait à découvrir :
 
 ## Livrables réalisés
 
-- Présentation de la méthodologie
+- [Présentation de la méthodologie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_08/Projet_08_presentation.pdf)
 - Notebook Jupyter de l'analyse
