@@ -28,4 +28,4 @@ Comment juguler un taux d'attrition inquiétant ?
 ## Livrables réalisés
 
 - [Présentation de l'analyse](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_02/Projet_02_presentation.pdf)
-- Rapport d'analyse
+- [Rapport d'analyse](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_02/Projet_02_rapport_analyse.pdf)
