@@ -26,4 +26,4 @@ Ce projet visait à approfondir les compétences dans le *traitement* et le *net
 ## Livrables réalisés
 
 - [Présentation de la méthodologie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_06/Projet_06_presentation.pdf)
-- Notebook Jupyter de l'analyse
+- [Notebook Jupyter de l'analyse](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_06/Projet_06_notebook.ipynb)
