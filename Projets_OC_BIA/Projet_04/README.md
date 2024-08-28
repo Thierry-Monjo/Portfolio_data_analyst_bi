@@ -20,6 +20,6 @@ Mission : aider une filiale de l'assurance automobile à traiter les dossiers de
 ## Livrables réalisés
 
 - [Présentation de la méthodologie](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_04/Projet_04_presentation.pdf)
-- Rapport technique
+- [Rapport technique](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_04/Projet_04_rapport_technique.pdf)
 - Recommandations
 
