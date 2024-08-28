@@ -24,4 +24,4 @@ Ce projet visait à approfondir les *compétences de data visualisation* en appr
 
 ## Livrables réalisés
 
-- Tableau de bord Power BI
+- [Tableau de bord Power BI](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/Projets_OC_BIA/Projet_07/Projet_07_tableau-de-bord.pbix)
