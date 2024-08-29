@@ -2,6 +2,11 @@
 
 ![Business-Intelligence-Analyst_image](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/Business-Intelligence-Analyst.jpg)
 
+## Objet de ce portfolio 
+Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'**Aéroworld**.
+
+![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
+
 ## Quelques mots de présentation
 Après une longue carrière en qualité de [comptable associatif](https://www.linkedin.com/in/thierry-monjo-da), j'ai décidé me m'intéresser au domaine de la data en toute fin de parcours professionnel. 
 
@@ -43,12 +48,6 @@ Mais cet original, avouons-le, c'est moi !
 Je suis un amoureux des livres et du verbe, j'ai participé à plusieurs concours de poésie, écrite pour la plupart des textes en classique.
 
 <hr>
-
-## Objet de ce portfolio 
-Ce portfolio professionnel est destiné à présenter mon profil de candidat au poste de **Data Analyst chef de projet** d'**Aéroworld**.
-
-![Aéroworld_logo](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/Aeroworld.png)
-
 
 ## Des éléments en partage
 Ce portfolio est constitué d'un certain nombre d'éléments mis en partage :
