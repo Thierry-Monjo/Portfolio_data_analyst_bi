@@ -23,7 +23,7 @@ Et un pas de côté pour aider à me présenter de manière moins conventionnell
 
 ![Poetry](https://github.com/Thierry-Monjo/Portfolio_data_analyst_bi/blob/main/img/poetry.png)
 
-**[Sonnet](https://fr.wikipedia.org/wiki/Sonnet) avant d'entrer**
+**[Sonnet](https://fr.wikipedia.org/wiki/Sonnet) avant d'entrer** (en matière)...
 
 ```
 Savoir choisir les mots pour mieux se définir,
